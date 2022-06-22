@@ -1,0 +1,27 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/loading",
+		"style": {
+			"navigationBarTitleText": "测试应用"
+		}
+	}, {
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"onReachBottomDistance": 0,
+		"app-plus": {
+			"scrollIndicator": "none",
+			"titleNView": false
+		}
+	}
+}

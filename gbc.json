@@ -1,0 +1,5 @@
+{
+	"type":"build-config",
+	"version":"0.0.1",
+	"outputPath":"build"
+}

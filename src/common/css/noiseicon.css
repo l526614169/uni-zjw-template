@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'noise-icon';
+	src: url('https://at.alicdn.com/t/font.woff2?t=1635433198188') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.noise-icon {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'project-icon' !important;
+	speak: never;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 16px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.project-icon-camera:before {
+	content: "\e900";
+}

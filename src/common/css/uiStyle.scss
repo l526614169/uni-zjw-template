@@ -1,0 +1,13 @@
+@mixin zlb-uiStyle($size, $color, $weight) {
+		@content;
+		color: $color;
+	
+		font: {
+			size: $size + rpx;
+			weight: $weight;
+		}
+	}
+	
+@function getUiStyle($style: normal) {
+	@return $style == normal;
+}

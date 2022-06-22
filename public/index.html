@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script> -->
+		<script type="text/javascript" src="//assets.zjzwfw.gov.cn/assets/ZWJSBridge/1.0.1/zwjsbridge.js"></script>
+		<script>
+			(function(w, d, s, q, i) {
+				w[q] = w[q] || [];
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s);
+				j.async = true;
+				j.id = 'beacon-aplus';
+				j.src = 'https://d.alicdn.com/alilog/mlog/aplus.js?id=202951085';
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'aplus_queue');
+			aplus_queue.push({
+				action: 'aplus.setMetaInfo',
+				arguments: ['aplus-waiting', 'MAN']
+			});
+			aplus_queue.push({
+				action: 'aplus.setMetaInfo',
+				arguments: ['aplus-rhost-v', 'alog.zjzwfw.gov.cn']
+			});
+			aplus_queue.push({
+				action: 'aplus.setMetaInfo',
+				arguments: ['aplus-rhost-g', 'alog.zjzwfw.gov.cn']
+			});
+			aplus_queue.push({
+				action: 'aplus.setMetaInfo',
+				arguments: ['appId', '60506758']
+			});
+			aplus_queue.push({
+				action: 'aplus.setMetaInfo',
+				arguments: ['_hold', 'BLOCK']
+			});
+		</script>
+		<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+            })
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
+	</head>
+
+	<body>
+		<noscript>
+			<strong>Please enable JavaScript to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+
+</html>
