@@ -1,3 +1,5 @@
+import { initZwlog, zwlogPvGlobal, zwlogMixin, zwlogRecord } from './zwlog.js';
+
 function formatTime(time) {
 	if (typeof time !== 'number' || time < 0) {
 		return time
@@ -86,10 +88,14 @@ const $utils = {
 	dateUtils: dateUtils,
 	initMap: initMap,
 	desensitization: desensitization,
+	initZwlog: initZwlog
 }
 
 const install = Vue => {
-	Vue.prototype.$utils = $utils
+	Vue.prototype.$utils = $utils;
+	Vue.prototype.$zwlogPvGlobal = zwlogPvGlobal;
+	Vue.prototype.$zwlogRecord = zwlogRecord;
+	Vue.mixin(zwlogMixin);
 }
 
 export default {
